@@ -1,0 +1,10 @@
+input[type="text"] {
+  color: var(--color-grey-3);
+  background-color: var(--color-grey-5);
+  width: 100%;
+  padding: var(--gap-6) var(--gap-6);
+  font-size: var(--gap-3);
+  border: none;
+  border-radius: var(--radius-1);
+  cursor: pointer;
+}

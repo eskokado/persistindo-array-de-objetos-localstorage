@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/globalStyles.css">
+  <link rel="stylesheet" href="/styles/buttons.css">
+  <link rel="stylesheet" href="/styles/fonts.css">
+  <link rel="stylesheet" href="/styles/margins.css">
+  <link rel="stylesheet" href="/styles/paddings.css">
+  <link rel="stylesheet" href="/styles/colors.css">
+  <link rel="stylesheet" href="/styles/positioning.css">
+  <link rel="stylesheet" href="/styles/inputs.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Persistindo array de objetos no localstorage</title>
+</head>
+<body>
+  <header class="mt-0 flex justify-center mb-4">
+    <h1>Doooing</h1>
+  </header>
+  <main class="container mt-1">
+    <section class="flex">
+      <input id="inpTask" type="text" class="mr-5" placeholder="Write my task...">
+      <button id="btnAdd" class="button-brand">Add</button>
+    </section>
+    <ul >
+      <li class="pt-6 pb-6 pr-5 pl-5 mt-5 bg-color-grey-5 radius-1 flex justify-between items-center">
+        <span class="font-text-2-medium">Fazer as compras no supermercado</span>
+        <button id="btnRemove" data-task-id="1" class="button-grey">Excluir</button>
+      </li>
+      <li class="pt-6 pb-6 pr-5 pl-5 mt-5 bg-color-grey-5 radius-1 flex justify-between items-center">
+        <span class="font-text-2-medium">Fazer as compras no supermercado</span>
+        <button id="btnRemove" data-task-id="1" class="button-grey">Excluir</button>
+      </li>
+      <li class="pt-6 pb-6 pr-5 pl-5 mt-5 bg-color-grey-5 radius-1 flex justify-between items-center">
+        <span class="font-text-2-medium">Fazer as compras no supermercado</span>
+        <button id="btnRemove" data-task-id="1" class="button-grey">Excluir</button>
+      </li>
+      <li class="pt-6 pb-6 pr-5 pl-5 mt-5 bg-color-grey-5 radius-1 flex justify-between items-center">
+        <span class="font-text-2-medium">Fazer as compras no supermercado</span>
+        <button id="btnRemove" data-task-id="1" class="button-grey">Excluir</button>
+      </li>
+      <li class="pt-6 pb-6 pr-5 pl-5 mt-5 bg-color-grey-5 radius-1 flex justify-between items-center">
+        <span class="font-text-2-medium">Fazer as compras no supermercado</span>
+        <button id="btnRemove" data-task-id="1" class="button-grey">Excluir</button>
+      </li>
+      <li class="pt-6 pb-6 pr-5 pl-5 mt-5 bg-color-grey-5 radius-1 flex justify-between items-center">
+        <span class="font-text-2-medium">Fazer as compras no supermercado</span>
+        <button id="btnRemove" data-task-id="1" class="button-grey">Excluir</button>
+      </li>
+    </ul>
+    <section class="mt-0 flex justify-center">
+      <h2>Without any task registered...</h2>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+.font-title-1-bold{
+    font-size: var(--gap-3);
+    font-weight: var(--font-weight-1);
+    color: var(--color-grey-1)
+}
+.font-title-1-medium{
+    font-size: var(--gap-3);
+    font-weight: var(--font-weight-2);
+    color: var(--color-grey-1)
+}
+.font-title-2-bold{
+    font-size: var(--gap-3);
+    font-weight: var(--font-weight-1);
+    color: var(--color-grey-1)
+}
+.font-text-1-bold{
+    font-size: var(--gap-4);
+    font-weight: var(--font-weight-1);
+    color: var(--color-grey-1)
+}
+.font-text-1-medium{
+    font-size: var(--gap-4);
+    font-weight: var(--font-weight-2);
+    color: var(--color-grey-1)
+}
+.font-text-1-regular{
+    font-size: var(--gap-4);
+    font-weight: var(--font-weight-3);
+    color: var(--color-grey-1)
+}
+.font-text-2-bold{
+    font-size: var(--gap-5);
+    font-weight: var(--font-weight-1);
+    color: var(--color-grey-2)
+}
+.font-text-2-medium{
+    font-size: var(--gap-5);
+    font-weight: var(--font-weight-2);
+    color: var(--color-grey-2)
+}
+.font-text-2-regular{
+    font-size: var(--gap-5);
+    font-weight: var(--font-weight-3);
+    color: var(--color-grey-2)
+}
+a{
+    text-decoration: none;
+    color: var(--font-text-2)
+}
