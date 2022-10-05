@@ -14,24 +14,29 @@ function state(initialValue) {
   return [getValue, setValue];
 }
 
-const [database, setDatabase] = state([
-  {
-    id: 1,
-    name: "Tarefa 1",
-  },
-  {
-    id: 2,
-    name: "Tarefa 2",
-  },
-  {
-    id: 3,
-    name: "Tarefa 3",
-  },
-  {
-    id: 4,
-    name: "Tarefa 4",
-  },
-]);
+const tasksInLocalStorege = localStorage.getItem("tasks")
+
+const [database, setDatabase] = state(tasksInLocalStorege == null ? [] : JSON.parse(tasksInLocalStorege));
+
+
+// const [database, setDatabase] = state([
+//   {
+//     id: 1,
+//     name: "Tarefa 1",
+//   },
+//   {
+//     id: 2,
+//     name: "Tarefa 2",
+//   },
+//   {
+//     id: 3,
+//     name: "Tarefa 3",
+//   },
+//   {
+//     id: 4,
+//     name: "Tarefa 4",
+//   },
+// ]);
 
 
 const tasks = database()
@@ -60,6 +65,9 @@ btnAdd.addEventListener("click", () => {
   }
   tasks.push(task)
   renderTasks(tasks)
+
+  localStorage.setItem("tasks", JSON.stringify(tasks))
+
   input.value = ""
   lastId++
 })

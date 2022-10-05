@@ -49,6 +49,7 @@ const removerTask = (event) => {
   const task = tasks.find((e) => e.id == id)
   const index = tasks.indexOf(task)
   tasks.splice(index, 1)
+  localStorage.setItem("tasks", JSON.stringify(tasks))
   renderTasks(tasks)
 }
 
